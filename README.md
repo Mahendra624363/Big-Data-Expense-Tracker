@@ -47,7 +47,8 @@ CREATE TABLE users (
   password STRING
 )
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','; ```
+FIELDS TERMINATED BY ',';
+ ```
 
 📄 expenses Table with Partitioning
 ```sql
@@ -63,7 +64,8 @@ PARTITIONED BY (
   day INT
 )
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ',';```
+FIELDS TERMINATED BY ',';
+```
 
 
 🚀 How to Run
