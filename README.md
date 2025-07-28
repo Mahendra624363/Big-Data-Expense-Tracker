@@ -47,11 +47,11 @@ CREATE TABLE users (
   password STRING
 )
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ',';
+FIELDS TERMINATED BY ','; ```
+
 📄 expenses Table with Partitioning
-sql
-Copy
-Edit
+```sql
+
 CREATE TABLE expenses (
   username STRING,
   amount DOUBLE,
@@ -63,23 +63,19 @@ PARTITIONED BY (
   day INT
 )
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ',';
+FIELDS TERMINATED BY ',';```
+
+
 🚀 How to Run
 ✅ Prerequisites
+
 Cloudera or any Hive-enabled Hadoop environment
 
 Hive JDBC JAR: hive-jdbc-uber.jar
 
-Java 8 (use Java 8 for java.time compatibility or replace LocalDate with java.util.Calendar)
-
 ⚙️ Compile the Project
-bash
-Copy
-Edit
 javac -cp ".:hive-jdbc-uber.jar" *.java
+
 ▶️ Run the Project
-bash
-Copy
-Edit
 java -cp ".:hive-jdbc-uber.jar" Main
-Use : on Linux/Mac and ; on Windows for classpath.
+
