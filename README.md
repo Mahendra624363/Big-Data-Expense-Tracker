@@ -71,13 +71,24 @@ FIELDS TERMINATED BY ',';
 🚀 How to Run
 ✅ Prerequisites
 
-Cloudera or any Hive-enabled Hadoop environment
+## 🚀 How to Run the Project
 
-Hive JDBC JAR: hive-jdbc-uber.jar
+### ✅ Prerequisites
 
-⚙️ Compile the Project
+- 🐘 Cloudera or any Hive-enabled Hadoop environment  
+- 📦 Hive JDBC Driver: `hive-jdbc-uber.jar` must be placed in the project root
+
+---
+
+### ⚙️ Compile the Project
+
+#### 💻 On Linux / macOS:
+```bash
 javac -cp ".:hive-jdbc-uber.jar" *.java
+```
 
-▶️ Run the Project
+
+####▶️ Run the Project
+```bash
 java -cp ".:hive-jdbc-uber.jar" Main
-
+```
