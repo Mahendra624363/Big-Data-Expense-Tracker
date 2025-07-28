@@ -88,7 +88,7 @@ javac -cp ".:hive-jdbc-uber.jar" *.java
 ```
 
 
-####▶️ Run the Project
+#### ▶️ Run the Project
 ```bash
 java -cp ".:hive-jdbc-uber.jar" Main
 ```
